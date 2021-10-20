@@ -10,23 +10,3 @@ print(c)
 
 print(a + b + c)
 print(a,b,c)
-
-#Added in Git one more time
-
-#Added from VSC
-
-# Testing git text
-
-# Fixed on PC 1
-
-# Added data to the branch, not merging
-
-# Last fix, upload
-
-# test two
-
-# Fix
-
-# Added new data for B3
-
-#Pull request
