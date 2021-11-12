@@ -95,21 +95,9 @@ while count <= iterations:
     if convergence_test(centroids, centroids_update)[0] == True:
         break
 
-
-
-
+# Plotting the result
 get_groups2(sample, centroids_update)
 sample_side = sample.copy()
 sample_side[2] = groupings
 plt.scatter(sample_side[0], sample_side[1], c=sample_side[2])
 plt.show()
-
-#def clustering_algorithm(iterations, sample, centroid):
-#    i = iterations
-#    count = 0
-#    while count <= i:
-#        centroids_update = clustering(sample, centroid)
-#        print("iteration number:", count, "\n", centroids_update)
-#        count += 1
-#
-#clustering_algorithm(10, sample, centroids_update)
