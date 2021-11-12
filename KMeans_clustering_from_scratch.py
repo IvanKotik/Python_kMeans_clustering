@@ -2,17 +2,17 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-np.random.seed(800)
+np.random.seed(888)
 
 # Setting initial means
-means = 3
+means = 5
 
 # Sample random X coordinates
-sample_1 = np.abs(np.random.randn(100)*10)
+sample_1 = np.abs(np.random.randn(1000)*10)
 sample = pd.DataFrame(sample_1.T)
 
 # Sample random Y coordinates
-sample_2 = np.abs(np.random.randn(100)*7+50)
+sample_2 = np.abs(np.random.randn(1000)*7+50)
 sample[1] = sample_2
 
 # Set initial random centroids
@@ -84,7 +84,7 @@ sample_side[2] = groupings
 centroids_update = sample_side.groupby(2).mean()
 
 # Consecutive iterations
-iterations = 10
+iterations = 10  # Select the number of iterations
 count = 0
 while count <= iterations:
     centroids = centroids_update
