@@ -8,11 +8,11 @@ np.random.seed(888)
 means = 5
 
 # Sample random X coordinates
-sample_1 = np.abs(np.random.randn(1000)*10)
+sample_1 = np.abs(np.random.randn(100)*10)
 sample = pd.DataFrame(sample_1.T)
 
 # Sample random Y coordinates
-sample_2 = np.abs(np.random.randn(1000)*7+50)
+sample_2 = np.abs(np.random.randn(100)*7+50)
 sample[1] = sample_2
 
 # Set initial random centroids
